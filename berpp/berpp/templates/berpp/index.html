@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+<!--     <script src="{% static 'js/main.js' %}"></script> -->
+<!--     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" /> -->
+</head>
+<style>
+div.header {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+} 
+div.navbar {
+	background-color: black;
+	color: black;
+}
+</style>
+<body>
+	<div class="header">
+		<h1> BeMed </h1>
+	</div>
+	<div class="navbar">
+		 <a href="{% url 'home' %}">Home</a>
+		 <a href="{% url 'about' %}">About</a>
+		 <a href="{% url 'schedule' %}">Master Schedule</a>
+		 <a href="{% url 'extra' %}">Extracurriculars</a>
+	 </div>
+
+</body>
+</html>
+    
