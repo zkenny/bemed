@@ -1,1 +1,12 @@
-derp derp
+.header {
+/*    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/ab/Patates.jpg");*/
+	background-color: black;
+    color: white;
+/*    margin: 20px 0 20px 0;*/
+/*    padding: 50px;*/
+    vertical-align: bottom;
+} 
+.navbar {
+	background-color: black;
+	color: black;
+}
