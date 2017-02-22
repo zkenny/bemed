@@ -3,7 +3,7 @@ from django_countries.fields import CountryField
 
 
 class Experience(models.Model):
-    user = modlels.ForeignKey('User')
+    user = models.ForeignKey('User')
 
     EXPERIENCE_TYPE_CHOICES = (
         ('ET01', 'Artistic Endeavors'),
