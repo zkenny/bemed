@@ -1,7 +1,10 @@
 from django.db import models
+from django_countries.fields import CountryField
 
 
 class Experience(models.Model):
+    user = modlels.ForeignKey('User')
+
     EXPERIENCE_TYPE_CHOICES = (
         ('ET01', 'Artistic Endeavors'),
         ('ET02', 'Community Service/Volunteer --Medical/Clinical'),
@@ -49,8 +52,12 @@ class Experience(models.Model):
     #################################################################################
     organization_name = models.CharField(max_length=100, blank=True)
     #################################################################################
-    #TODO: country, (state if usa), (province if canada), city
+    #TODO: (state if usa), (province if canada), city dropdown
     #################################################################################
+    country = CountryField()
+    state = models.CharField(max_length=200, blank=True)
+    city = models.CharField(max_length=200, blank=True)
+
     contact_first_name = models.CharField(max_length=35)
     contact_last_name = models.CharField(max_length=35)
     contact_title = models.CharFeild(max_length=100)
