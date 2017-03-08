@@ -31,3 +31,6 @@ def ec_form(request):
         form = ECForm()
 
     return render(request, 'ec_forms.html', {'form': form, 'bookinst':book_inst})
+
+def signup(request):
+    return render(request, 'signup.html')

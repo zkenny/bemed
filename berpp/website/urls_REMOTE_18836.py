@@ -14,5 +14,4 @@ urlpatterns = [
     url(r'^extracurriculars$', views.index, name='extra'),
     url(r'^signup', views.signup, name='register'),
     url(r'^', views.home, name='home'),
-    url(r'^ecform/$', views.ec_form, name='ecform'),
 ]

@@ -9,10 +9,9 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    url(r'^about$', views.index, name='about'),
-    url(r'^schedule$', views.index, name='schedule'),
-    url(r'^extracurriculars$', views.index, name='extra'),
-    url(r'^signup', views.signup, name='register'),
     url(r'^', views.home, name='home'),
-    url(r'^ecform/$', views.ec_form, name='ecform'),
+    url(r'^$', views.index, name='index'),
+    url(r'^about/$', views.index, name='about'),
+    url(r'^schedule/$', views.index, name='schedule'),
+    url(r'^extracurriculars/$', views.index, name='extra'),
 ]
