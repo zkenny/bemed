@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^about/$', views.index, name='about'),
     url(r'^schedule/$', views.index, name='schedule'),
     url(r'^extracurriculars/$', views.index, name='extra'),
+    url(r'^ecform/$', views.ec_form, name='ecform'),
 ]
