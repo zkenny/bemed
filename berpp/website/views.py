@@ -7,3 +7,6 @@ def index(request):
 
 def home(request):
     return render(request, 'index.html')
+
+def signup(request):
+    return render(request, 'signup.html')

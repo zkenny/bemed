@@ -140,3 +140,23 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+EXPERIENCE_TYPE_CHOICES = (
+        ('ET01', 'Artistic Endeavors'),
+        ('ET02', 'Community Service/Volunteer --Medical/Clinical'),
+        ('ET03', 'Community Service/Volunteer --Not Medical/Clinical'),
+        ('ET04', 'Conferences Attended'),
+        ('ET05', 'Extracurricular Activities'),
+        ('ET06', 'Hobbies'),
+        ('ET07', 'Honors/Awards/Recognition'),
+        ('ET08', 'Intercollegiate Athletics'),
+        ('ET09', 'Leadership - not listed elsewhere'),
+        ('ET10', 'Military Service'),
+        ('ET11', 'Other'),
+        ('ET12', 'Paid Employment - Medical/Clinical'),
+        ('ET13', 'Paid Employment - Not Medical/Clinical'),
+        ('ET14', 'Physician Shadowing/Clinical Observation'),
+        ('ET15', 'Presentation/Posters'),
+        ('ET16', 'Publications'),
+        ('ET17', 'Research/Lab'),
+        ('ET18', 'Teaching/Tutoring/Teaching Assistant)')
+)
