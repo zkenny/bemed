@@ -33,4 +33,8 @@ def ec_form(request):
     return render(request, 'ec_forms.html', {'form': form, 'bookinst':book_inst})
 
 def signup(request):
+    if request.method == "POST":
+        
+        return render(request, 'signup.html')
+
     return render(request, 'signup.html')
