@@ -1,7 +1,9 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
+from django.template import RequestContext
 
 from .ec_forms import ECForm
+from .users.forms import UserForm
 
 
 def index(request):
@@ -38,7 +40,7 @@ def signup(request):
 
     if request.method == 'POST':
         user_form = UserForm(data=request.POST)
-        profile_form = UserProfileForm(data=request.POST)
+        #profile_form = UserProfileForm(data=request.POST)
 
         if user_form.is_valid() and profile_form.is_valid():
             user = user_form.save()
@@ -52,8 +54,8 @@ def signup(request):
             print(str(user_form.errors) + " " + str(profile_form.errors))
     else:
         user_form = UserForm()
-        profile_form = UserProfileForm()
-    return render_to_response(
-            'users/register.html',
-            {'user_form': user_form, 'profile_form': profile_form, 'registered': registered},
+        #profile_form = UserProfileForm()
+    return render(request,
+            'signup.html',
+            {'user_form': user_form, 'registered': registered}, #'profile_form': profile_form,
             context)
