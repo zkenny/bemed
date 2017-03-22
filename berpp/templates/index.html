@@ -1,66 +1,13 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block description %}This page is an awesome home page.{% endblock %}
 
-    <title>BeMed</title>
-    <style>
-      body {
-        background-color:#FFF !important;
-      }
-      .navbar-nav > li > a, .navbar-brand {
-          padding-top:15px !important; padding-bottom:0 !important;
-          height: 30px;
-      }
-      .navbar {min-height:30px !important;}
-      .btn, .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .btn-primary:visited, .btn-primary:active:hover, .btn-primary.active:hover {
-          background-color: #fff;
-          color:#fff;
-          border: none;
-          outline: none;
-      }
-    </style>
-    <!-- Bootstrap core CSS -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  </head>
-  <body>
-    <div class="container">
-
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">BeMed</a>
-          </div>
-          <div id="navbar" class="navbar navbar-right">
-            <ul class="nav navbar-nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#schedule">My Schedule</a></li>
-              <li><a href="#extra">My Activities</a></li>
-            </ul>
-            <button type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-user"> </span> Login </button>
-          </div>
-        </div>
-      </nav>
-      <h1 style="color:F7F2F1;"> forgive me this is to shift down </h1>
-      <div class="jumbotron">
+{% block content %}
+<div class="jumbotron">
         <h1>Hello, world!</h1>
         <p>...</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-      </div>
-    </div>
+</div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
-</html>
-
-
+{% endblock %}
